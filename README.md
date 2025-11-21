@@ -12,7 +12,7 @@ The system features a robust teleoperation suite that interfaces an **Xbox contr
 ## 2. Results
 
 <p float="left">
-  <img src="results/GraphSLAM_Arena.jpg" width="45%" />
+  <img src="results/GraphSLAM_Area.jpg" width="45%" />
   <img src="results/graph_slam_results_3LD.png" width="45%" />
 </p> 
 
