@@ -1,0 +1,15 @@
+<launch>
+
+    <node name="serial_node_11411" pkg="rosserial_python" type="serial_node.py" output="screen" args="tcp 11411" />
+
+    <node pkg="slam_system" type="esp_bridge.py" name="esp32_bridge_node" output="screen">
+        <param name="wheel_base" value="0.18" />
+        <param name="ticks_per_meter" value="4950" />
+        <param name="odom_frame" value="odom" />
+        <param name="base_frame" value="base_link" />
+    </node>
+
+    <node pkg="tf" type="static_transform_publisher" name="base_to_lidar_broadcaster"
+          args="0.1 0 0 0 0 0 base_link base_scan 100" />
+
+</launch>

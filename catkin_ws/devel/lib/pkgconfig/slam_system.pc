@@ -1,0 +1,8 @@
+prefix=/home/soumyajeet17/gitrepos/catkin_ws/devel
+
+Name: slam_system
+Description: Description of slam_system
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 
